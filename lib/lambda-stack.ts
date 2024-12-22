@@ -11,7 +11,7 @@ export class LambdaStack extends cdk.Stack {
     // Create Lambda function
     const botFunction = new lambda.Function(this, 'BotFunction', {
       runtime: lambda.Runtime.NODEJS_18_X,
-      handler: 'index.handler',
+      handler: 'index.cjs.handler',
       code: lambda.Code.fromAsset('dist'),
       timeout: cdk.Duration.minutes(5),
       memorySize: 256,
