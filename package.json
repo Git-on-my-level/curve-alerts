@@ -14,7 +14,7 @@
     "lint": "eslint \"**/*.ts\"",
     "lint:fix": "eslint \"**/*.ts\" --fix",
     "cdk": "npx cdk",
-    "deploy": "npm run build && node dist/bin/app.js",
+    "deploy": "npm run build && npx cdk deploy",
     "destroy": "cdk destroy",
     "synth": "cdk synth",
     "diff": "cdk diff"
